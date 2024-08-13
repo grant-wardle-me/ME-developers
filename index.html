@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Projects Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Development Projects Dashboard</h1>
+        
+        <!-- Filters -->
+        <div class="filters">
+            <select id="developerFilter">
+                <option value="">Select Developer</option>
+            </select>
+            <select id="developmentTypeFilter">
+                <option value="">Select Development Type</option>
+            </select>
+            <select id="partnerFilter">
+                <option value="">Select Partner</option>
+            </select>
+        </div>
+
+        <!-- Table for Projects -->
+        <table id="projectsTable">
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Developer</th>
+                    <th>Development Type</th>
+                    <th>Partner</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <!-- Chart -->
+        <canvas id="projectsChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
